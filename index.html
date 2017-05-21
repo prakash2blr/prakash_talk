@@ -1,0 +1,42 @@
+<html>
+<title>Talk With me</title>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min_3.css"/>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        .container{
+            top: 50px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="text-center">
+            <input class="form-control" type="text" id="que" style="width: auto !important;display: inline !important;"/>
+            <button class="btn btn-primary" onclick="getJson();">Question Pls :-)</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="text-center">
+            <img src="images/index.png" id="dont-talk" alt=""/>
+            <img src="images/face.gif" id="talk" style="display: none" alt=""/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="text-center">
+            <div class="append-audio">
+                <audio id="play-my-idea"  controls="controls" autoplay="autoplay" style="visibility: hidden;"></audio>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="js/talk.js"></script>
+</body>
+</html>
